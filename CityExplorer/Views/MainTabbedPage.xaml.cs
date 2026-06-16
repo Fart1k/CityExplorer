@@ -1,4 +1,4 @@
-﻿namespace CityExplorer
+﻿namespace CityExplorer.Views
 {
     public partial class MainPage : ContentPage
     {
