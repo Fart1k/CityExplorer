@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using CityExplorer.Views;
 
 namespace CityExplorer
 {
@@ -7,6 +8,8 @@ namespace CityExplorer
         public App()
         {
             InitializeComponent();
+
+            MainPage = new MainTabbedPage();
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
