@@ -4,11 +4,38 @@
              x:Class="CityExplorer.Views.ExplorePage"
              Title="Explore">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="10" Padding="20">
+
         <Label 
-            Text="Explore Page"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+            Text="Explore Tallinn"
+            FontSize="24"
+            HorizontalOptions="Center"/>
+
+        <CarouselView  ItemsSource="{Binding Places}"  CurrentItem="{Binding SelectedPlace}"  HeightRequest="400">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="#1E1E1E">
+
+                        <VerticalStackLayout Spacing="10">
+                            <Image 
+                                Source="{Binding Image}"
+                                HeightRequest="220"
+                                Aspect="AspectFill"/>
+                            <Label
+                                Text="{Binding Name}"
+                                FontSize="20"
+                                FontAttributes="Bold"/>
+                            <Label 
+                                Text="{Binding Description}"
+                                FontSize="14"
+                                Opacity="0.7"/>
+                        </VerticalStackLayout>
+                        
+                    </Frame>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
     </VerticalStackLayout>
     
 </ContentPage>
