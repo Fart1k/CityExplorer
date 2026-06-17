@@ -21,17 +21,21 @@ namespace CityExplorer.Services
 
         public async Task<List<Place>> GetFavoritesAsync()
         {
-            return await database.Table<Place>().ToListAsync();
+            return await database.Table<Place>()
+                .Where(p => p.IsFavorite)
+                .ToListAsync();
         }
 
         public async Task AddFavoriteAsync(Place place)
         {
-            await database.InsertAsync(place);
+            place.IsFavorite = true;
+            await database.UpdateAsync(place);
         }
 
         public async Task DeleteFavoriteAsync(Place place)
         {
-            await database.DeleteAsync(place);
+            place.IsFavorite = false;
+            await database.UpdateAsync(place);
         }
     }
 }

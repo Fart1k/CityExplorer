@@ -14,7 +14,7 @@ namespace CityExplorer.Models
 
         public string Title => AppResources.ResourceManager.GetString(ResourceKey, AppResources.Culture);
 
-    public void Refresh()
+        public void Refresh()
         {
             OnPropertyChanged(nameof(Title));
         }

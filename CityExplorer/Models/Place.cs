@@ -15,6 +15,7 @@ namespace CityExplorer.Models
 
         public string NameKey { get; set; }
         public string DescriptionKey { get; set; }
+        public bool IsFavorite { get; set; }
 
         public string Name => AppResources.ResourceManager.GetString(NameKey, AppResources.Culture);
         public string Description => AppResources.ResourceManager.GetString(DescriptionKey, AppResources.Culture);

@@ -96,7 +96,6 @@ namespace CityExplorer.ViewModels
 
         public void FilterPlace(string category)
         {
-            System.Diagnostics.Debug.WriteLine($"Filter: {category}");
 
             Places.Clear();
 
