@@ -9,7 +9,12 @@ namespace CityExplorer.ViewModels
 {
     public class ExploreViewModel : BaseViewModel
     {
-        public string Title => AppResources.Explore;
+        public string Explore => AppResources.Explore;
+        public string AllCategory => AppResources.All;
+        public string HistoryCategory => AppResources.History;
+        public string ParkCatefory => AppResources.Park;
+        public string FoodCategory => AppResources.Food;
+
         public ObservableCollection<Category> Categories { get; set; }
         public ICommand FilterCommand { get; }
 
@@ -33,25 +38,25 @@ namespace CityExplorer.ViewModels
                 new Category
                 {
                     Emoji = "🌍",
-                    Title = "All",
+                    ResourceKey = AllCategory,
                     Value = "all"
                 },
                 new Category
                 {
                     Emoji = "🏛️",
-                    Title = "History",
+                    ResourceKey = "History",
                     Value = "history"
                 },
                 new Category
                 {
                     Emoji = "🌳",
-                    Title = "Park",
+                    ResourceKey = "Park",
                     Value = "park"
                 },
                 new Category
                 {
                     Emoji = "🍔",
-                    Title = "Food",
+                    ResourceKey = "Food",
                     Value = "food"
                 },
             };
@@ -61,26 +66,26 @@ namespace CityExplorer.ViewModels
                 new Place
                 {
                     Id = 1,
-                    Name = "Tallinn Old Town",
-                    Description = "Historic medieval city center",
                     Image = "oldtown.jpg",
-                    Category = "history"
+                    Category = "history",
+                    NameKey = "OldTownName",
+                    DescriptionKey = "OldTownDesc"
                 },
                 new Place
                 {
                     Id = 2,
-                    Name = "Kadriorg Park",
-                    Description = "Beautiful green park with palace",
                     Image = "kadriorg.jpg",
-                    Category = "park"
+                    Category = "park",
+                    NameKey = "KadriorgName",
+                    DescriptionKey = "KadriorgDesc"
                 },
                 new Place
                 {
                     Id = 3,
-                    Name = "Seaplane Harbour",
-                    Description = "Maritime museum with real submarines",
                     Image = "seaplane.jpg",
-                    Category = "food"
+                    Category = "food",
+                    NameKey = "SeaplaneName",
+                    DescriptionKey = "SeaplaneDesc"
                 }
             };
 
@@ -105,7 +110,42 @@ namespace CityExplorer.ViewModels
 
         private void OnLanguageChanged()
         {
-            OnPropertyChanged(nameof(Title));
+            OnPropertyChanged(nameof(Explore));
+            OnPropertyChanged(nameof(Categories));
+            OnPropertyChanged(nameof(Places));
+            
+
+            foreach (var category in Categories)
+            {
+                category.Refresh();
+            }
+
+            ReloadPlaces();
+            ReloadCategories();
         }
+        private void ReloadPlaces()
+        {
+            var current = Places.ToList();
+
+            Places.Clear();
+
+            foreach (var p in current)
+                Places.Add(p);
+
+            OnPropertyChanged(nameof(Places));
+        }
+
+        private void ReloadCategories()
+        {
+            var current = Categories.ToList();
+
+            Categories.Clear();
+
+            foreach (var c in current)
+                Categories.Add(c);
+
+            OnPropertyChanged(nameof(Categories));
+        }
+
     }
 }

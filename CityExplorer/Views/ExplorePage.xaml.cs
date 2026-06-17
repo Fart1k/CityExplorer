@@ -1,4 +1,5 @@
 using CityExplorer.Models;
+using CityExplorer.Resources.Strings;
 using CityExplorer.Services;
 using CityExplorer.ViewModels;
 using System.Timers;
@@ -26,13 +27,13 @@ public partial class ExplorePage : ContentPage
 
 		if (place == null) return;
 
-		bool add = await DisplayAlertAsync(place.Name, place.Description, "Add To Favorites", "Close");
+		bool add = await DisplayAlertAsync(place.Name, place.Description, AppResources.AddToFavorites, AppResources.Close);
 
 		if (add)
 		{
 			await _databaseService.AddFavoriteAsync(place);
 
-			await DisplayAlertAsync("Success", $"{place.Name} added to favorites.", "OK");
+			await DisplayAlertAsync(AppResources.SuccessText, $"{place.Name} {AppResources.AddedToFavorites}", AppResources.Ok );
 		}
 	}
 

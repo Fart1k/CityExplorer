@@ -61,6 +61,15 @@ namespace CityExplorer.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to added to favorites.
+        /// </summary>
+        internal static string AddedToFavorites {
+            get {
+                return ResourceManager.GetString("AddedToFavorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add to Favorites.
         /// </summary>
         internal static string AddToFavorites {
@@ -79,7 +88,25 @@ namespace CityExplorer.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        internal static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Explore.
+        /// </summary>
+        internal static string ExloreNav {
+            get {
+                return ResourceManager.GetString("ExloreNav", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explore Tallinn.
         /// </summary>
         internal static string Explore {
             get {
@@ -115,11 +142,56 @@ namespace CityExplorer.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Beautiful green park with palace.
+        /// </summary>
+        internal static string KadriorgDesc {
+            get {
+                return ResourceManager.GetString("KadriorgDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kadriorg Park.
+        /// </summary>
+        internal static string KadriorgName {
+            get {
+                return ResourceManager.GetString("KadriorgName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
         internal static string Language {
             get {
                 return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok.
+        /// </summary>
+        internal static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Historic medieval city center.
+        /// </summary>
+        internal static string OldTownDesc {
+            get {
+                return ResourceManager.GetString("OldTownDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tallinn Old Town.
+        /// </summary>
+        internal static string OldTownName {
+            get {
+                return ResourceManager.GetString("OldTownName", resourceCulture);
             }
         }
         
@@ -133,11 +205,38 @@ namespace CityExplorer.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Maritime museum with submarines.
+        /// </summary>
+        internal static string SeaplaneDesc {
+            get {
+                return ResourceManager.GetString("SeaplaneDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seaplane Harbour.
+        /// </summary>
+        internal static string SeaplaneName {
+            get {
+                return ResourceManager.GetString("SeaplaneName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string SuccessText {
+            get {
+                return ResourceManager.GetString("SuccessText", resourceCulture);
             }
         }
     }

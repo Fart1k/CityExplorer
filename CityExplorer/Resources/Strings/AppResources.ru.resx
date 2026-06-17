@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddedToFavorites" xml:space="preserve">
+    <value>добавлено в избранное</value>
+  </data>
   <data name="AddToFavorites" xml:space="preserve">
     <value>Добавить в избранное</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Все</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="ExloreNav" xml:space="preserve">
+    <value>Исследование</value>
+  </data>
   <data name="Explore" xml:space="preserve">
-    <value>Исследовать</value>
+    <value>Исследуйте Таллинн</value>
   </data>
   <data name="Favorites" xml:space="preserve">
     <value>Избранное</value>
@@ -138,10 +147,34 @@
   <data name="Language" xml:space="preserve">
     <value>Язык</value>
   </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ок</value>
+  </data>
   <data name="Park" xml:space="preserve">
     <value>Парк</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Настройки</value>
+  </data>
+  <data name="SuccessText" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="OldTownName" xml:space="preserve">
+    <value>Старый город</value>
+  </data>
+  <data name="OldTownDesc" xml:space="preserve">
+    <value>Исторический средневековый центр города</value>
+  </data>
+  <data name="KadriorgName" xml:space="preserve">
+    <value>Парк Кадриорг</value>
+  </data>
+  <data name="KadriorgDesc" xml:space="preserve">
+    <value>Прекрасный зеленый парк с дворцом.</value>
+  </data>
+  <data name="SeaplaneName" xml:space="preserve">
+    <value>Морской музей</value>
+  </data>
+  <data name="SeaplaneDesc" xml:space="preserve">
+    <value>Морской музей с подводными лодками</value>
   </data>
 </root>

@@ -7,7 +7,7 @@
     <CollectionView x:Name="FavoritesCollection" ItemsSource="{Binding Favorites}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Frame Margin="10">
+                <Frame Margin="10" BackgroundColor="#1E1E1E">
 
                     <VerticalStackLayout>
 

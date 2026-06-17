@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddedToFavorites" xml:space="preserve">
+    <value>lisatud lemmikutesse</value>
+  </data>
   <data name="AddToFavorites" xml:space="preserve">
     <value>Lisa lemmikutesse</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>Kõik</value>
   </data>
-  <data name="Explore" xml:space="preserve">
+  <data name="Close" xml:space="preserve">
+    <value>Kinni</value>
+  </data>
+  <data name="ExloreNav" xml:space="preserve">
     <value>Avasta</value>
+  </data>
+  <data name="Explore" xml:space="preserve">
+    <value>Avastage Tallinna</value>
   </data>
   <data name="Favorites" xml:space="preserve">
     <value>Lemmikud</value>
@@ -138,10 +147,34 @@
   <data name="Language" xml:space="preserve">
     <value>Keel</value>
   </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
   <data name="Park" xml:space="preserve">
     <value>Park</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Seaded</value>
+  </data>
+  <data name="SuccessText" xml:space="preserve">
+    <value>Edu</value>
+  </data>
+  <data name="OldTownName" xml:space="preserve">
+    <value>Vanalinn</value>
+  </data>
+  <data name="OldTownDesc" xml:space="preserve">
+    <value>Ajalooline keskaegne linnakeskus</value>
+  </data>
+  <data name="KadriorgName" xml:space="preserve">
+    <value>Kadrioru park</value>
+  </data>
+  <data name="KadriorgDesc" xml:space="preserve">
+    <value>Ilus roheline park paleega</value>
+  </data>
+  <data name="SeaplaneName" xml:space="preserve">
+    <value>Lennusadam</value>
+  </data>
+  <data name="SeaplaneDesc" xml:space="preserve">
+    <value>Meremuuseum allveelaevadega</value>
   </data>
 </root>

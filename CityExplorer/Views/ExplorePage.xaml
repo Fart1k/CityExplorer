@@ -8,7 +8,7 @@
     <VerticalStackLayout Spacing="10" Padding="20">
 
         <Label 
-            Text="{Binding Title}"
+            Text="{Binding Explore}"
             FontSize="24"
             HorizontalOptions="Center"/>
 
@@ -16,7 +16,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
 
-                    <Frame Padding="10" Margin="5" CornerRadius="20" BackgroundColor="#EEE">
+                    <Frame Padding="10" Margin="5" CornerRadius="20" BackgroundColor="#1E1E1E">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer
                                 Command="{Binding BindingContext.FilterCommand, Source={x:Reference Name=PageRoot}}"
@@ -42,7 +42,7 @@
         <CarouselView  ItemsSource="{Binding Places}"  CurrentItem="{Binding SelectedPlace}"  HeightRequest="400">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="LightGray">
+                    <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="#1E1E1E">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer 
                                 Tapped="PlaceTapped"/>

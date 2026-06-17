@@ -20,6 +20,11 @@ namespace CityExplorer.ViewModels
             SetEnglishCommand = new Command(() => LocalizationService.SetLanguage("en"));
             SetEstonianCommand = new Command(() => LocalizationService.SetLanguage("et"));
             SetRussianCommand = new Command(() => LocalizationService.SetLanguage("ru"));
+
+            LocalizationService.LanguageChanged += () =>
+            {
+                OnPropertyChanged(nameof(LanguageText));
+            };
         }
     }
 }

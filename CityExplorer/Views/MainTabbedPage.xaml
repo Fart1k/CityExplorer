@@ -4,9 +4,9 @@
             xmlns:views="clr-namespace:CityExplorer.Views"
              x:Class="CityExplorer.Views.MainTabbedPage">
 
-    <views:ExplorePage Title="Explore"/>
-    <views:FavoritesPage Title="Favorites"/>
-    <views:SettingsPage Title="Settings"/>
+    <views:ExplorePage/>
+    <views:FavoritesPage/>
+    <views:SettingsPage/>
     
 
 </TabbedPage>
