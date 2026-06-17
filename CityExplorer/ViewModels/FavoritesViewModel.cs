@@ -26,10 +26,8 @@ namespace CityExplorer.ViewModels
 
             var places = await _databaseService.GetFavoritesAsync();
 
-            foreach (var place in places)
-            {
-                Favorites.Add(place);
-            }
+            foreach (var p in places)
+                Favorites.Add(p);
         }
 
         public async Task DeleteFavoriteAsync(Place place)
