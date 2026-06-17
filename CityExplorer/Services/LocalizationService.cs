@@ -18,7 +18,5 @@ namespace CityExplorer.Services
 
             LanguageChanged?.Invoke();
         }
-
-
     }
 }

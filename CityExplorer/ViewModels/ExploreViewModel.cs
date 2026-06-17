@@ -1,5 +1,6 @@
 ﻿using CityExplorer.Models;
 using CityExplorer.Resources.Strings;
+using CityExplorer.Services;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
@@ -25,7 +26,7 @@ namespace CityExplorer.ViewModels
 
         public ExploreViewModel()
         {
-            BaseViewModel.LanguageChanged += OnLanguageChanged;
+            LocalizationService.LanguageChanged += OnLanguageChanged;
 
             Categories = new ObservableCollection<Category>
             {

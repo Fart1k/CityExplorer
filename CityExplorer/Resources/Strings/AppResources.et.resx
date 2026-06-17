@@ -120,11 +120,26 @@
   <data name="AddToFavorites" xml:space="preserve">
     <value>Lisa lemmikutesse</value>
   </data>
+  <data name="All" xml:space="preserve">
+    <value>Kõik</value>
+  </data>
   <data name="Explore" xml:space="preserve">
     <value>Avasta</value>
   </data>
   <data name="Favorites" xml:space="preserve">
     <value>Lemmikud</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Toit</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Ajalugu</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Keel</value>
+  </data>
+  <data name="Park" xml:space="preserve">
+    <value>Park</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Seaded</value>

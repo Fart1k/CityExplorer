@@ -4,9 +4,9 @@
              x:Class="CityExplorer.Views.SettingsPage"
              Title="Settings">
 
-    <VerticalStackLayout Spacing="10" Padding="20">
+    <VerticalStackLayout Padding="20" Spacing="10">
 
-        <Label Text="Language" FontSize="24"/>
+        <Label Text="{Binding LanguageText}" FontSize="24"/>
 
         <Button Text="English" Command="{Binding SetEnglishCommand}" />
         <Button Text="Eesti" Command="{Binding SetEstonianCommand}" />

@@ -120,11 +120,26 @@
   <data name="AddToFavorites" xml:space="preserve">
     <value>Добавить в избранное</value>
   </data>
+  <data name="All" xml:space="preserve">
+    <value>Все</value>
+  </data>
   <data name="Explore" xml:space="preserve">
     <value>Исследовать</value>
   </data>
   <data name="Favorites" xml:space="preserve">
     <value>Избранное</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Еда</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Park" xml:space="preserve">
+    <value>Парк</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Настройки</value>

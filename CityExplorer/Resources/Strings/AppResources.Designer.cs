@@ -70,6 +70,15 @@ namespace CityExplorer.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        internal static string All {
+            get {
+                return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Explore.
         /// </summary>
         internal static string Explore {
@@ -84,6 +93,42 @@ namespace CityExplorer.Resources.Strings {
         internal static string Favorites {
             get {
                 return ResourceManager.GetString("Favorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Food.
+        /// </summary>
+        internal static string Food {
+            get {
+                return ResourceManager.GetString("Food", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to History.
+        /// </summary>
+        internal static string History {
+            get {
+                return ResourceManager.GetString("History", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Park.
+        /// </summary>
+        internal static string Park {
+            get {
+                return ResourceManager.GetString("Park", resourceCulture);
             }
         }
         

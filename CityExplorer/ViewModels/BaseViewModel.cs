@@ -24,12 +24,5 @@ namespace CityExplorer.ViewModels
             OnPropertyChanged(propertyName);
             return true;
         }
-
-        public static event Action LanguageChanged;
-
-        public static void RaiseLanguageChanged()
-        {
-            LanguageChanged?.Invoke();
-        }
     }
 }

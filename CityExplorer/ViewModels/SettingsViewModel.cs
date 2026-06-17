@@ -1,4 +1,5 @@
-﻿using CityExplorer.Services;
+﻿using CityExplorer.Resources.Strings;
+using CityExplorer.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,18 +13,13 @@ namespace CityExplorer.ViewModels
         public ICommand SetEstonianCommand { get; }
         public ICommand SetRussianCommand { get; }
 
+        public string LanguageText => AppResources.Language;
 
-        public SettingsViewModel()
+    public SettingsViewModel()
         {
             SetEnglishCommand = new Command(() => LocalizationService.SetLanguage("en"));
             SetEstonianCommand = new Command(() => LocalizationService.SetLanguage("et"));
             SetRussianCommand = new Command(() => LocalizationService.SetLanguage("ru"));
-            LocalizationService.LanguageChanged += OnLanguageChanged;
-        }
-
-        private void OnLanguageChanged()
-        {
-            OnPropertyChanged(string.Empty);
         }
     }
 }
