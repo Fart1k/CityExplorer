@@ -14,7 +14,7 @@
         <CarouselView  ItemsSource="{Binding Places}"  CurrentItem="{Binding SelectedPlace}"  HeightRequest="400">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="#1E1E1E">
+                    <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="LightGray">
 
                         <VerticalStackLayout Spacing="10">
                             <Image 

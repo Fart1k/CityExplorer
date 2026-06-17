@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CityExplorer.Services;
+using Microsoft.Extensions.Logging;
 
 namespace CityExplorer
 {
@@ -14,6 +15,8 @@ namespace CityExplorer
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<DatabaseService>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
