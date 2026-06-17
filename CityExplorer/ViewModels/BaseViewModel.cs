@@ -8,6 +8,7 @@ namespace CityExplorer.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        
         public event PropertyChangedEventHandler? PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -22,6 +23,13 @@ namespace CityExplorer.ViewModels
             field = value;
             OnPropertyChanged(propertyName);
             return true;
+        }
+
+        public static event Action LanguageChanged;
+
+        public static void RaiseLanguageChanged()
+        {
+            LanguageChanged?.Invoke();
         }
     }
 }

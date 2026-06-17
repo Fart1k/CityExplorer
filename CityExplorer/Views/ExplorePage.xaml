@@ -2,20 +2,52 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CityExplorer.Views.ExplorePage"
+             x:Name="PageRoot"
              Title="Explore">
 
     <VerticalStackLayout Spacing="10" Padding="20">
 
         <Label 
-            Text="Explore Tallinn"
+            Text="{Binding Title}"
             FontSize="24"
             HorizontalOptions="Center"/>
 
+        <CollectionView ItemsSource="{Binding Categories}" ItemsLayout="HorizontalList" HeightRequest="60" HorizontalOptions="Center">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <Frame Padding="10" Margin="5" CornerRadius="20" BackgroundColor="#EEE">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding BindingContext.FilterCommand, Source={x:Reference Name=PageRoot}}"
+                                CommandParameter="{Binding Value}" />
+                        </Frame.GestureRecognizers>
+
+                        <HorizontalStackLayout Spacing="5">
+                            <Label 
+                                Text="{Binding Emoji}"
+                                FontSize="20"/>
+
+                            <Label 
+                                Text="{Binding Title}"
+                                FontSize="14"/>
+                        </HorizontalStackLayout>
+                        
+                    </Frame>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
         <CarouselView  ItemsSource="{Binding Places}"  CurrentItem="{Binding SelectedPlace}"  HeightRequest="400">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Frame CornerRadius="20" Padding="0" Margin="10" HasShadow="True" IsClippedToBounds="True" BackgroundColor="LightGray">
-
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="PlaceTapped"/>
+                        </Frame.GestureRecognizers>
+                        
                         <VerticalStackLayout Spacing="10">
                             <Image 
                                 Source="{Binding Image}"

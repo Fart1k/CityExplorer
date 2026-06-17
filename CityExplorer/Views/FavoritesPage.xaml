@@ -4,11 +4,36 @@
              x:Class="CityExplorer.Views.FavoritesPage"
              Title="Favorites">
 
-    <VerticalStackLayout>
-        <Label
-            Text="Favorites Page"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
-    </VerticalStackLayout>
+    <CollectionView x:Name="FavoritesCollection" ItemsSource="{Binding Favorites}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Margin="10">
+
+                    <VerticalStackLayout>
+
+                        <Image 
+                            Source="{Binding Image}"
+                            HeightRequest="150"
+                            Aspect="AspectFill"/>
+
+                        <Label 
+                            Text="{Binding Name}"
+                            FontSize="20"
+                            FontAttributes="Bold"/>
+
+                        <Label 
+                            Text="{Binding Description}"/>
+
+                        <Button
+                            Text="Remove"
+                            Clicked="RemoveButton_Clicked"/>
+
+                    </VerticalStackLayout>
+                    
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    
     
 </ContentPage>
